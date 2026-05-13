@@ -103,8 +103,6 @@ Este projeto foi desenvolvido para estudos, portfólio e aprimoramento em:
 
 # 📌 Status
 
----
-
 🚧 Em desenvolvimento — novas funcionalidades serão adicionadas futuramente.
 
 # ⚖️ Licenca
