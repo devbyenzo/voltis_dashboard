@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+# ⚡ Voltis — Financial Dashboard Desktop App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Voltis é um dashboard financeiro moderno desenvolvido com React, TypeScript, Electron e TailwindCSS, focado em visualização de mercado, monitoramento de moedas, gráficos interativos e experiência premium desktop.
 
-Currently, two official plugins are available:
+O projeto possui interface moderna em tema neon escuro, animações suaves e arquitetura preparada para integração futura com APIs reais de cotação.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Dashboard financeiro moderno
+* Visualização de moedas e pares
+* Conversor de moedas
+* Gráficos interativos
+* Sistema de favoritos
+* Área de relatórios
+* Configurações do sistema
+* Interface responsiva
+* Aplicativo Desktop com Electron
+* Tema premium neon dark
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🖥️ Versões Disponíveis
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O repositório possui:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Código fonte completo (React + Electron)
+* Versão executável `.exe` para Windows
+* Estrutura preparada para futuras integrações com APIs financeiras
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+# 🔌 Integração com API
+
+Atualmente o projeto utiliza dados mockados para demonstração visual.
+
+Futuramente serão adicionadas integrações reais com APIs de cotação em tempo real, como:
+
+* AwesomeAPI
+* ExchangeRate API
+* APIs financeiras e cripto
+
+A estrutura da função `refreshMarketData()` já está preparada para receber essas integrações.
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+* React
+* TypeScript
+* Electron
+* TailwindCSS
+* Vite
+* Framer Motion
+
+---
+
+# 📦 Como executar
+
+## Instalar dependências
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Rodar em desenvolvimento
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run electron
 ```
+
+## Gerar build desktop (.exe)
+
+```bash
+npm run dist
+```
+
+---
+
+# 📁 Estrutura
+
+```bash
+src/            → Interface React
+electron/       → Configuração Electron
+dist/           → Build web
+release/        → Aplicativo executável
+```
+
+---
+
+# 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido para estudos, portfólio e aprimoramento em:
+
+* Desenvolvimento Desktop
+* Interfaces modernas
+* Dashboards financeiros
+* Integração futura com APIs
+* Experiência premium UI/UX
+
+---
+
+# 📌 Status
+
+🚧 Em desenvolvimento — novas funcionalidades serão adicionadas futuramente.
